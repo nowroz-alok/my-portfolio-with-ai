@@ -703,7 +703,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+   <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
@@ -790,7 +790,7 @@
             <div class="image-box">
 
     <!-- Replace profile.jpg with your own image -->
-    <img src="image/my photo.jpeg" alt=""> alt="Nowroz Rabayat">
+    <img src="image/my photo.jpeg" alt="">
 
 </div>
                 <div class="experience-card">
@@ -1111,7 +1111,7 @@
 
                 <div class="project-card">
 
-                    <img src="project1.jpg" alt="Logo Design">
+                    <img src="photo" alt="Logo Design">
 
                     <div class="project-overlay">
                         <span>Branding</span>
@@ -1127,7 +1127,7 @@
 
                 <div class="project-card">
 
-                    <img src="project2.jpg" alt="Flyer Design">
+                    <img src="image/Travel Agency Mockup.jpg" alt="Flyer Design">
 
                     <div class="project-overlay">
                         <span>Marketing</span>
@@ -1245,7 +1245,7 @@
 
                         <section>
                             <span>Email</span>
-                            <h4>yourmail@gmail.com</h4>
+                            <h4>nowrozalokjkkniu@gmail.com</h4>
                         </section>
 
                     </div>
@@ -1259,7 +1259,7 @@
 
                         <section>
                             <span>Phone</span>
-                            <h4>+880 1XXXXXXXXX</h4>
+                            <h4>+880 1726429948</h4>
                         </section>
 
                     </div>
@@ -1282,43 +1282,42 @@
 
 
 
-                <form class="contact-form">
+               <form class="contact-form" id="contact-form">
 
-                    <div class="input-row">
+    <div class="input-row">
 
-                        <div class="input-group">
-                            <label>Your Name</label>
-                            <input type="text" placeholder="Enter your name">
-                        </div>
+        <div class="input-group">
+            <label>Your Name</label>
+            <input type="text" name="name" placeholder="Your Name" required>
+        </div>
 
-                        <div class="input-group">
-                            <label>Your Email</label>
-                            <input type="email" placeholder="Enter your email">
-                        </div>
+        <div class="input-group">
+            <label>Your Email</label>
+            <input type="email" name="email" placeholder="Your Email Address" required>
+        </div>
 
-                    </div>
+    </div>
 
+    <div class="input-group">
+        <label>Subject</label>
+        <input type="text" name="subject" placeholder="Enter subject" required>
+    </div>
 
-                    <div class="input-group">
-                        <label>Subject</label>
-                        <input type="text" placeholder="Enter subject">
-                    </div>
+    <div class="input-group">
+        <label>Your Message</label>
+        <textarea
+            name="message"
+            rows="6"
+            placeholder="Write your message"
+            required></textarea>
+    </div>
 
+    <button type="submit" class="btn primary-btn">
+        Send Message
+        <i class="fa-solid fa-paper-plane"></i>
+    </button>
 
-                    <div class="input-group">
-                        <label>Your Message</label>
-                        <textarea
-                        rows="6"
-                        placeholder="Write your message"></textarea>
-                    </div>
-
-
-                    <button type="submit" class="btn primary-btn">
-                        Send Message
-                        <i class="fa-solid fa-paper-plane"></i>
-                    </button>
-
-                </form>
+</form>
 
             </div>
 
@@ -1331,35 +1330,44 @@
     <!-- ================= FOOTER ================= -->
     <footer>
 
-        <div class="container footer-container">
+        <div class="container footer-container"> 
 
-            <a href="#" class="logo">
-                Nowroz<span>.</span>
-            </a>
+    <a href="#" class="logo"> 
+        Nowroz<span>.</span> 
+    </a> 
 
-            <p>
-                © 2026 Nowroz Rabayat. All Rights Reserved.
-            </p>
+    <p> 
+        © 2026 Nowroz Rabayat. All Rights Reserved.
+    </p>
 
-            <div class="footer-social">
+    <!-- Current Date & Time -->
+    <div class="current-datetime">
+        <span id="currentDateTime"></span>
+    </div>
 
-                <a href="#">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
+    <div class="footer-social"> 
 
-                <a href="#">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
+        <a href="#"> 
+            <i class="fa-brands fa-facebook-f"></i> 
+        </a> 
 
-                <a href="#">
-                    <i class="fa-brands fa-behance"></i>
-                </a>
+        <a href="#"> 
+            <i class="fa-brands fa-linkedin-in"></i> 
+        </a> 
 
-            </div>
+        <a href="#"> 
+            <i class="fa-brands fa-behance"></i> 
+        </a> 
 
-        </div>
+    </div> 
 
+</div>
     </footer>
+<!-- EmailJS Library -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<!-- Your JavaScript -->
+<script src="js/script.js"></script>
 
 </body>
 >>>>>>> 6cded97 (My portfolio first commit)
